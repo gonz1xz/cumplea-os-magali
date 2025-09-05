@@ -45,13 +45,28 @@ function hideMessage() {
     document.getElementById('messageModal').classList.remove('flex');
 }
 
+// Reproducir audio "ES HOY"
+function playEsHoy() {
+    const button = event.target;
+    let audio = document.getElementById('birthday-audio-es-hoy');
+    
+    if(!audio) {
+        audio = document.createElement('audio');
+        audio.id = 'birthday-audio-es-hoy';
+        audio.preload = 'auto';
+        audio.src = 'https://www.myinstants.com/media/sounds/es-hoy-es-hoy.mp3';
+        document.body.appendChild(audio);
+        audio.play();
+    }
+}
+
 // Reproducir audio "E MENTIRA"
 function playMusic() {
     const button = event.target;
-    
+
     // Crear elemento de audio si no existe
     let audio = document.getElementById('birthday-audio');
-    
+
     if (!audio) {
         audio = document.createElement('audio');
         audio.id = 'birthday-audio';
@@ -60,19 +75,17 @@ function playMusic() {
         audio.src = 'https://www.myinstants.com/media/sounds/eh-mentira.mp3';
         document.body.appendChild(audio);
     }
-    
+
     // Reproducir o pausar el audio
     if (audio.paused) {
         audio.play().then(() => {
             console.log('🎵 "E MENTIRA" reproduciéndose');
-            button.innerHTML = '⏸️ Pausar';
         }).catch(error => {
             console.error('Error al reproducir audio:', error);
             alert('No se pudo reproducir el audio. Asegúrate de que el archivo existe.');
         });
     } else {
         audio.pause();
-        button.innerHTML = '🎵 E MENTIRA';
     }
 }
 

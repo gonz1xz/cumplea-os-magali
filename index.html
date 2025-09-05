@@ -44,7 +44,7 @@
 
       <!-- Botones de acción -->
       <div class="flex flex-col md:flex-row gap-4 animate__animated animate__heartBeat animate__infinite">
-         <button onclick="createConfetti()"
+         <button onclick="(() => { createConfetti(); playEsHoy(); })()"
             class="px-8 py-4 bg-white text-rose-600 font-bold rounded-full shadow-lg hover:scale-105 transition-transform">
             🎉 ¡Celebrar!
          </button>
@@ -115,7 +115,7 @@
       <div class="max-w-4xl mx-auto text-center">
          <button onclick="showMessage()"
             class="px-8 py-4 bg-rose-600 text-white font-bold rounded-full shadow-lg hover:scale-105 transition-transform justify-center">
-            💌 Mensaje especial
+            💌 Mensaje especial 💌
          </button>
       </div>
    </section>
@@ -137,7 +137,8 @@
          <p class="text-lg mb-6">
             Preferi ir por un regalo donde podamos pasar un momento juntos donde lo disfrutes.
             Asi que te voy a llevar a la mejor hamburgeseria que encontre porque se que te encantan las hamburguesitas.
-            Solo tenes que decirme cuando. Te amo muchisimo mi amor!
+            <br>Solo tenes que decirme cuando. 
+            <br> Te amo muchisimo wachiiinnn!!
          </p>
          <button onclick="hideMessage()"
             class="px-6 py-3 bg-rose-600 text-white rounded-full hover:scale-105 transition-transform">
