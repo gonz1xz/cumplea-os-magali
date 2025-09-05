@@ -1,0 +1,25 @@
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  .float { animation: float 3s ease-in-out infinite; }
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: #ff6b6b;
+    animation: confetti-fall 3s linear infinite;
+  }
+  @keyframes confetti-fall {
+    0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
+  .heart {
+    position: fixed;
+    color: #ff6b6b;
+    animation: heart-float 4s ease-in-out infinite;
+  }
+  @keyframes heart-float {
+    0%, 100% { transform: translateY(0px) scale(1); opacity: 0.7; }
+    50% { transform: translateY(-30px) scale(1.2); opacity: 1; }
+}

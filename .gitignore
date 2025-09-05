@@ -1,0 +1,16 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de audio grandes (opcional)
+*.mp3
+*.wav
+*.ogg
+
+# Archivos de respaldo
+*.bak
+*~

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Feliz Cumple, Mi Amor ❤️</title>
+   <!-- TailwindCSS CDN -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Animate.css CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!-- Font Awesome para iconos -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="styles.css">
+   <script src="index.js"></script>
+   </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-pink-300 via-rose-400 to-red-500 text-white overflow-x-hidden">
+
+   <!-- Efectos de confeti y corazones flotantes -->
+   <div id="confetti-container"></div>
+   <div id="hearts-container"></div>
+
+   <!-- Sección principal -->
+   <section class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative">
+
+      <!-- Mensaje principal -->
+      <div class="mb-8">
+         <h1 class="text-4xl md:text-7xl font-bold mb-4 animate__animated animate__tada animate__infinite">
+            ¡¡Feliz Cumpleaños!!
+         </h1>
+         <h1 class="text-4xl md:text-7xl font-bold mb-4 animate__animated animate__tada animate__infinite">
+            ❤️🎂❤️
+         </h1>
+         <h2 class="text-2xl md:text-4xl font-bold mb-4 animate__animated animate__tada animate__infinite">
+            Mi culito de perro
+         </h2>
+         <p class="text-lg md:text-2xl max-w-2xl animate__animated animate__fadeIn animate__delay-1s">
+            ✨Hoy celebro tu vida✨<br>
+            Gracias por hacerme tan feliz cada día
+         </p>
+      </div>
+
+      <!-- Botones de acción -->
+      <div class="flex flex-col md:flex-row gap-4 animate__animated animate__heartBeat animate__infinite">
+         <button onclick="createConfetti()"
+            class="px-8 py-4 bg-white text-rose-600 font-bold rounded-full shadow-lg hover:scale-105 transition-transform">
+            🎉 ¡Celebrar!
+         </button>
+      </div>
+
+   </section>
+
+   <!-- Sección de mensajes especiales -->
+   <section class="py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+         <h2 class="text-3xl md:text-4xl font-bold mb-12 animate__animated animate__fadeIn">
+            💕 Mensajes de Amor 💕
+         </h2>
+         <div class="space-y-8">
+            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-8 animate__animated animate__fadeInRight">
+               <p class="text-lg md:text-xl italic">
+                  "Tal vez no sea el mejor regalo, pero es el que senti que problablemente no te hagan nunca y
+                  como sabras intento ser diferente."
+               </p>
+            </div>
+            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-8 animate__animated animate__fadeInLeft">
+               <p class="text-lg md:text-xl italic">
+                  "Espero que disfrutes mucho de tu dia y que sepas que te amo muchisimo!"
+               </p>
+            </div>
+            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-8 animate__animated animate__fadeInLeft">
+               <p class="text-lg md:text-xl italic">
+                  "Te admiro, sos una persona increible, que se esfuerza muchisimo y lo mas importante es que nunca
+                  te rendiste por nuestra relacion."
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Sección de regalos virtuales -->
+   <section class="py-16 px-6 bg-white bg-opacity-10 backdrop-blur-sm">
+      <div class="max-w-4xl mx-auto text-center">
+         <h2 class="text-3xl md:text-4xl font-bold mb-12 animate__animated animate__fadeIn">
+            🎁 Tus Regalos Especiales
+         </h2>
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-8 animate__animated animate__zoomIn">
+               <i class="fa-solid fa-gift text-4xl mb-4"></i>
+               <h3 class="text-xl font-bold mb-4">Tu regalo</h3>
+               <p class="mb-4">Espero que te guste jiji!</p>
+               <button onclick="playMusic()"
+                  class="px-6 py-3 bg-rose-600 text-white rounded-full hover:scale-105 transition-transform">
+                  🎵 E MENTIRA
+               </button>
+            </div>
+            <div
+               class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-8 animate__animated animate__zoomIn animate__delay-1s">
+               <i class="fa-solid fa-eye text-4xl mb-4"></i>
+               <h3 class="text-xl font-bold mb-4">Secreto</h3>
+               <p class="mb-4">Pulsalo con cuidado...</p>
+               <button
+                  onclick="window.location.href='https://wa.me/1128773727?text=Te%20amo%20gonzalito,%20me%20encanto%20muchisimo%20el%20regalo%20sos%20el%20mejor,%20despues%20te%20entrego%20la%20cola'"
+                  class="px-6 py-3 bg-rose-600 text-white rounded-full hover:scale-105 transition-transform">
+                  👀OJO​👀​
+               </button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="py-16 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+         <button onclick="showMessage()"
+            class="px-8 py-4 bg-rose-600 text-white font-bold rounded-full shadow-lg hover:scale-105 transition-transform justify-center">
+            💌 Mensaje especial
+         </button>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="py-8 text-center">
+      <p class="text-lg animate__animated animate__fadeIn">
+         Hecho con ❤️ para la mejor persona del mundo
+      </p>
+      <div class="mt-4 text-2xl animate__animated animate__heartBeat animate__infinite">
+         🎂🎉🎈🎁✨
+      </div>
+   </footer>
+
+   <!-- Modal para mensaje especial -->
+   <div id="messageModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+      <div class="bg-white rounded-3xl p-8 max-w-md text-center text-gray-800 animate__animated animate__zoomIn">
+         <h3 class="text-2xl font-bold mb-4 text-rose-600">💌 Mensaje Especial</h3>
+         <p class="text-lg mb-6">
+            Preferi ir por un regalo donde podamos pasar un momento juntos donde lo disfrutes.
+            Asi que te voy a llevar a la mejor hamburgeseria que encontre porque se que te encantan las hamburguesitas.
+            Solo tenes que decirme cuando. Te amo muchisimo mi amor!
+         </p>
+         <button onclick="hideMessage()"
+            class="px-6 py-3 bg-rose-600 text-white rounded-full hover:scale-105 transition-transform">
+            Cerrar
+         </button>
+      </div>
+   </div>
+
+</body>
+
+</html>
